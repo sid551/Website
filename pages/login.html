@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | S.H.E.D</title>
+  <link rel="stylesheet" href="../styles/login.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="shortcut icon" href="../assets/favicon.png">
+</head>
+
+<body>
+  <div class="container">
+    <form class="form" onsubmit="login(event)">
+      <div class="form-header">
+        <h2>Welcome to S.H.E.D</h2>
+        <p>Please sign in to continue</p>
+      </div>
+
+      <div class="flex-column">
+        <label>Email</label>
+      </div>
+      <div class="inputForm">
+        <i class="fa-solid fa-at" style="color: #ca3b0c; font-size: 20px;"></i>
+        <input id="email" placeholder="Enter your Email" class="input" type="email" required />
+      </div>
+
+      <div class="flex-column">
+        <label>Password</label>
+      </div>
+      <div class="inputForm">
+        <i class="fa-solid fa-lock" style="color: #c70505; font-size: 20px;"></i>
+        <input id="password" placeholder="Enter your Password" class="input" type="password" required />
+      </div>
+
+      <button class="button-submit">Sign In</button>
+
+      <p class="p">
+        Don't have an account?
+        <a href="register.html"><span class="span-2">Sign Up</span></a>
+      </p>
+
+      <div class="divider">
+        <span>Or With</span>
+      </div>
+
+      <div class="flex-row">
+        <button type="button" class="btn google" onclick="googleSignIn()">
+          <i class="fa-brands fa-google" style="color: #0085eb;"></i>
+          Sign In With Google
+        </button>
+      </div>
+
+      <div class="return-home">
+        <a href="../index.html">← Return to Home</a>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
